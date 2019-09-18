@@ -1,14 +1,17 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
-], function (Controller) {
+	"ovly/extensible/controller/BaseController",
+	"ovly/extensible/model/formatter" //Sem extensão do arquivo formatter
+], function (BaseController, Formatador) {
 	"use strict";
 
-	return Controller.extend("ovly.extensible.controller.S1", {
+	return BaseController.extend("ovly.extensible.controller.S1", {
+
+		meuFormatador: Formatador,
 
 		onInit: function () {
 
 		},
-
+		
 		onItemPress: function (oEvent) {
 			var oParameter = oEvent.getParameters();
 			var oListItem = oParameter.listItem;

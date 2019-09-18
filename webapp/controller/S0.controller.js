@@ -1,9 +1,9 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
-], function (Controller) {
+	"ovly/extensible/controller/BaseController"
+], function (BaseController) {
 	"use strict";
 
-	return Controller.extend("ovly.extensible.controller.S0", {
+	return BaseController.extend("ovly.extensible.controller.S0", {
 		onInit: function () {
 
 		}
